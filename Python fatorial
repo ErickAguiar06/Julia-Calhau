@@ -1,0 +1,13 @@
+while True:
+    n = input("Digite um número: ")
+    if not n.isdigit():
+        print("Você deve digitar somente números inteiros")
+    else:
+            n = int(n)
+            if n < 0:
+                print("O número é negativo")
+            else:
+                fatorial =1
+                for i in range(1, n+1):
+                    fatorial += i
+                print(f"O fatorial de {n} é {fatorial}")
